@@ -1,0 +1,18 @@
+/* футер */
+.footer {
+   
+
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    background-color: var(--footer-backgound-color);
+}
+
+.footer__container {
+    // display: flex;
+    align-items: baseline;
+    padding: 60px 0px;
+    
+}

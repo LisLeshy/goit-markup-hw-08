@@ -1,0 +1,19 @@
+/* adress */
+.adress {
+    margin-top: 20px;
+    margin-right: 70px;
+   @include fonts(null, 14px, 1.71, 0.03em);
+    font-style: normal;
+   
+}
+
+.adress__text {
+    color: var(--accent-test-color);
+}
+
+.adress__link {
+    display: block;
+    margin-top: 9px;
+    color: var(--adress-color);
+    text-decoration: none;
+}

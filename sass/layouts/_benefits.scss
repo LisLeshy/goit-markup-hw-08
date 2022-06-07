@@ -1,0 +1,61 @@
+/* Преимущества */
+
+.benefits {
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+          padding-bottom: 60px;
+        }
+                 @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}     
+.benefits__list {
+    
+    @media screen and (min-width: 480px) {
+            margin: -15px;
+        }
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                   
+                }
+ }
+
+
+.benefits-article {
+    @media screen and (min-width: 480px) {
+            margin: 15px;
+        }
+         @media screen and (min-width: 768px) {
+             width: calc((100% - 4 * 15px) / 2);
+            }
+           @media screen and (min-width: 1200px) {
+               width: calc((100% - 8 * 15px) / 4);
+           }
+  
+}
+
+.benefits-article__meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 120px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    background-color: var(--team-backgound-color);
+}
+
+
+.benefits-article__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @include fonts(700, 14px, 1.14, 0.03em);
+    color: var(--title-text-color);
+
+}
+
+.benefits-article__text {
+    @include fonts(null, 14px, 1.71, 0.03em);
+}

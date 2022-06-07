@@ -1,0 +1,36 @@
+ /* клопки порфолио */
+ 
+
+ .filter-list {
+     margin-bottom: 50px;
+ }
+
+ .filter-list__item {
+     margin-right: 8px;
+
+     &:last-child {
+         margin-right: 0px;
+     }
+ }
+
+ .active-btn {
+     border: none;
+     border-radius: 4px;
+     padding: 6px 22px;
+     background-color: var(--team-backgound-color);
+     color: var(--title-text-color);
+     font-family: inherit;
+    @include fonts(500, 16px, 1.62, 0.03em);
+     cursor: pointer;
+     transition: background-color var(--transform),
+         color var(--transform),
+         box-shadow var(--transform);
+        &:hover,
+            &:focus {
+                background-color: var(--accent-color);
+                color: var(--accent-test-color);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+ }
+

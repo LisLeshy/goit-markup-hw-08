@@ -1,0 +1,38 @@
+/* Галерея */
+
+.gallery {
+    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+         display: none; 
+        
+    }
+}
+
+.gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    position: relative;
+    margin-right: 30px;
+    &:last-child {
+            margin-right: 0px;
+        }
+}
+
+
+.gallery-item__text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    height: 70px;
+    @include fonts(700, 14px, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-test-color);
+    background-color: var(--gallary-background-color);
+}

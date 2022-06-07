@@ -1,0 +1,37 @@
+/* network */
+.network__text {
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    @include fonts(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+
+    color: var(--accent-test-color);
+}
+
+.network-list {
+    display: flex;
+}
+
+.network-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.network-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--icon-backgroun-color);
+    border-radius: 50%;
+    transition: background-color var(--transform);
+    &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+
+}
+
+.network-list__icon {
+    fill: var(--accent-test-color);
+}

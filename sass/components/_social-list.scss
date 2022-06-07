@@ -1,0 +1,31 @@
+/* соц. сети */
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--icon-orignal-color);
+    background-color: var(--primary-backgound-color);
+    border-radius: 50%;
+    transition: background-color var(--transform),
+        fill var(--transform);
+
+        &:hover,
+            &:focus {
+                background-color: var(--accent-color);
+                fill: var(--accent-test-color);
+            }
+}
+
+
+
+.social-list__item:not(:last-child) {
+    margin-right: 10px;
+}

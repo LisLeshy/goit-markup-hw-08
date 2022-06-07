@@ -1,0 +1,17 @@
+.logo {@media screen and (min-width: 480px) {
+    
+    font-family: var(--font-family-logo);
+    @include fonts(700, 26px, 1.2, 0.03em);
+    text-decoration: none;
+    color: var(--accent-color)
+} }
+
+
+.logo__text {
+    color: var(--heder-logo-color);
+    &--footer {
+            color: var(--accent-test-color);
+        }
+}
+
+
