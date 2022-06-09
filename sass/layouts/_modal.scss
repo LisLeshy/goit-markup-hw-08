@@ -1,6 +1,7 @@
 /* modalka */
 .backdrop {
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,29 +34,29 @@
 
 }
 
-// .modal-button {
+.modal-button {
 
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin-top: -32px;
-//     margin-right: -32px;
-//     margin-left: auto;
-//     width: 30px;
-//     height: 30px;
-//     background: var(--primary-backgound-color);
-//     border: 1px solid rgba(0, 0, 0, 0.1);
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     border-radius: 50%;
-//     transition: box-shadow var(--transform);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -32px;
+    margin-right: -32px;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    background: var(--primary-backgound-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    transition: box-shadow var(--transform);
 
-//     &:hover {
-//             fill: var(--accent-color);
-//             cursor: pointer;
-//             box-shadow: none;
-//         }
+    &:hover {
+            fill: var(--accent-color);
+            cursor: pointer;
+            box-shadow: none;
+        }
     
-// }
+}
 
 .modal .form {
     margin-right: auto;

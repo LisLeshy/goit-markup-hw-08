@@ -1,18 +1,29 @@
 /* Команда */
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 480px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+   
     background-color: var(--team-backgound-color);
-    display: none;
+    
 }
 
 
 .team__list {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+@media screen and (min-width: 480px) {
+        margin: -15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .team-member {
@@ -25,16 +36,31 @@
     @include fonts(null, 16px, 1.19, 0.03em);
     text-align: center;
 
-    &:not(:last-child) {
-            margin-right: 30px;
+    @media screen and (min-width: 480px) {
+            margin: 15px;
         }
-}
+    
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 4 * 15px) / 2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 8 * 15px) / 4);
+        }
+    }
 
 
 .team-member__description {
+    @media screen and (min-width: 480px) {
+            padding-top: 30px;
+            padding-bottom: 24px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 30px;
+        }
 
-    padding-top: 30px;
-    padding-bottom: 30px;
+   
 }
 
 .team-member__name {
@@ -45,6 +71,23 @@
 }
 
 .team-member__text {
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 
+}
+.img-member {
+    @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 460px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 374px;;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width:270px;
+            height:260px;
+        }
+   
 }
