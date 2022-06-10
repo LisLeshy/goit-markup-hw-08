@@ -1,26 +1,26 @@
  /* клопки порфолио */
-//  .filter {
-//      padding-top: 50px;
-//  }
+ .filter {
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;;
+        }
+ }
 
  .filter-list {
+     list-style: none;
      display: flex;
      flex-wrap: wrap;
-     margin-bottom: -4px;
+     margin: -4px;
+     @media screen and (min-width: 768px) {
+         justify-content: center;
+         }
  }
 
  .filter-list__item {
-    @media screen and (min-width: 480px) {
-            margin: 4px;
-        }
-    
-        // @media screen and (min-width: 768px) {
-        //     width: calc((100% - 4 * 15px) / 2);
-        // }
-    
-        // @media screen and (min-width: 1200px) {
-        //     width: calc((100% - 8 * 15px) / 4);
-        // }
+     margin: 4px;
  }
 
  .active-btn {
@@ -41,6 +41,5 @@
                 color: var(--accent-test-color);
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
-
  }
 

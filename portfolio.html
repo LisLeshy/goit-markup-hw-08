@@ -39,7 +39,8 @@
           <li class="contact-list__item">
             <a class="contact-list__links" href="mailto:info@devstudio.com"
               ><svg class="contact-list__icon" width="16" height="16">
-                <use href="./images/sprite.svg#icon-envelope-1"></use></svg>info@devstudio.com</a>
+                <use href="./images/sprite.svg#icon-envelope-1"></use></svg>info@devstudio.com</a
+            >
           </li>
           <li class="contact-list__item">
             <a class="contact-list__links" href="tel:380961111111"
@@ -54,7 +55,7 @@
       <section class="work">
         <div class="container">
           <h1 class="section-title visually-hidden">Портфолио</h1>
-        
+         <div class="filter">
           <ul class="filter-list list">
             <li class="filter-list__item"><button type="button" class="active-btn">Все</button></li>
             <li class="filter-list__item">
@@ -70,18 +71,35 @@
               <button type="button" class="active-btn">Маркетинг</button>
             </li>
           </ul>
-        
+          </div>
           <ul class="work-list list">
             <li class="item">
               <a class="link" href="">
                 <div class="work-description">
-                  <img
-                    class="work-img img"
-                    src="./images/works/img-1.jpg"
-                    alt="work example Website"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/works/work-1-desk.jpg    1x,
+                        ./images/works/work-1-desk@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="./images/works/work-1-tab.jpg 1x, ./images/works/work-1-tab@2x.jpg 2x"
+                      type="image/jpg" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="./images/works/work-1-sm.jpg 1x, ./images/works/work-1-sm@2x.jpg 2x"
+                      type="image/jpg" />
+                    <img
+                      class="work-img img"
+                      src="./images/works/work-1-sm.jpg"
+                      alt="work example Website"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                  /></picture>
                   <div class="work-overlay">
                     <p class="description-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -99,13 +117,30 @@
             <li class="item">
               <a class="link" href="">
                 <div class="work-description">
-                  <img
-                    class="img"
-                    src="./images/works/img-2.jpg"
-                    alt="work example Website"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/works/work-2-desk.jpg    1x,
+                        ./images/works/work-2-desk@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="./images/works/work-2-tab.jpg 1x, ./images/works/work-2-tab@2x.jpg 2x"
+                      type="image/jpg" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="./images/works/work-2-sm.jpg 1x, ./images/works/work-2-sm@2x.jpg 2x"
+                      type="image/jpg" />
+                    <img
+                      class="work-img img"
+                      src="./images/works/work-2-sm.jpg"
+                      alt="work example Website"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                  /></picture>
                   <div class="work-overlay">
                     <p class="description-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -123,13 +158,30 @@
             <li class="item">
               <a class="link" href="">
                 <div class="work-description">
-                  <img
-                    class="img"
-                    src="./images/works/img-3.jpg"
-                    alt="work example Website"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/works/work-3-desk.jpg    1x,
+                        ./images/works/work-3-desk@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="./images/works/work-3-tab.jpg 1x, ./images/works/work-3-tab@2x.jpg 2x"
+                      type="image/jpg" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="./images/works/work-3-sm.jpg 1x, ./images/works/work-3-sm@2x.jpg 2x"
+                      type="image/jpg" />
+                    <img
+                      class="work-img img"
+                      src="./images/works/work-3-sm.jpg"
+                      alt="work example Website"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                  /></picture>
                   <div class="work-overlay">
                     <p class="description-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -147,13 +199,30 @@
             <li class="item">
               <a class="link" href="">
                 <div class="work-description">
-                  <img
-                    class="img"
-                    src="./images/works/img-4.jpg"
-                    alt="work example Website"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/works/work-4-desk.jpg    1x,
+                        ./images/works/work-4-desk@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="./images/works/work-4-tab.jpg 1x, ./images/works/work-4-tab@2x.jpg 2x"
+                      type="image/jpg" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="./images/works/work-4-sm.jpg 1x, ./images/works/work-4-sm@2x.jpg 2x"
+                      type="image/jpg" />
+                    <img
+                      class="work-img img"
+                      src="./images/works/work-4-sm.jpg"
+                      alt="work example Website"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                  /></picture>
                   <div class="work-overlay">
                     <p class="description-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -171,13 +240,30 @@
             <li class="item">
               <a class="link" href="">
                 <div class="work-description">
-                  <img
-                    class="img"
-                    src="./images/works/img-5.jpg"
-                    alt="work example Website"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/works/work-5-desk.jpg    1x,
+                        ./images/works/work-5-desk@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="./images/works/work-5-tab.jpg 1x, ./images/works/work-5-tab@2x.jpg 2x"
+                      type="image/jpg" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="./images/works/work-5-sm.jpg 1x, ./images/works/work-5-sm@2x.jpg 2x"
+                      type="image/jpg" />
+                    <img
+                      class="work-img img"
+                      src="./images/works/work-5-sm.jpg"
+                      alt="work example Website"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                  /></picture>
                   <div class="work-overlay">
                     <p class="description-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -195,13 +281,30 @@
             <li class="item">
               <a class="link" href="">
                 <div class="work-description">
-                  <img
-                    class="img"
-                    src="./images/works/img-6.jpg"
-                    alt="work example Website"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/works/work-6-desk.jpg    1x,
+                        ./images/works/work-6-desk@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="./images/works/work-6-tab.jpg 1x, ./images/works/work-6-tab@2x.jpg 2x"
+                      type="image/jpg" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="./images/works/work-6-sm.jpg 1x, ./images/works/work-6-sm@2x.jpg 2x"
+                      type="image/jpg" />
+                    <img
+                      class="work-img img"
+                      src="./images/works/work-6-sm.jpg"
+                      alt="work example Website"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                  /></picture>
                   <div class="work-overlay">
                     <p class="description-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -219,13 +322,30 @@
             <li class="item">
               <a class="link" href="">
                 <div class="work-description">
-                  <img
-                    class="img"
-                    src="./images/works/img-7.jpg"
-                    alt="work example Website"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/works/work-7-desk.jpg    1x,
+                        ./images/works/work-7-desk@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="./images/works/work-7-tab.jpg 1x, ./images/works/work-7-tab@2x.jpg 2x"
+                      type="image/jpg" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="./images/works/work-7-sm.jpg 1x, ./images/works/work-7-sm@2x.jpg 2x"
+                      type="image/jpg" />
+                    <img
+                      class="work-img img"
+                      src="./images/works/work-7-sm.jpg"
+                      alt="work example Website"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                  /></picture>
                   <div class="work-overlay">
                     <p class="description-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -243,13 +363,30 @@
             <li class="item">
               <a class="link" href="">
                 <div class="work-description">
-                  <img
-                    class="img"
-                    src="./images/works/img-8.jpg"
-                    alt="work example Website"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/works/work-8-desk.jpg    1x,
+                        ./images/works/work-8-desk@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="./images/works/work-8-tab.jpg 1x, ./images/works/work-8-tab@2x.jpg 2x"
+                      type="image/jpg" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="./images/works/work-8-sm.jpg 1x, ./images/works/work-8-sm@2x.jpg 2x"
+                      type="image/jpg" />
+                    <img
+                      class="work-img img"
+                      src="./images/works/work-8-sm.jpg"
+                      alt="work example Website"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                  /></picture>
                   <div class="work-overlay">
                     <p class="description-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -267,13 +404,30 @@
             <li class="item">
               <a class="link" href="">
                 <div class="work-description">
-                  <img
-                    class="img"
-                    src="./images/works/img-9.jpg"
-                    alt="work example Website"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/works/work-9-desk.jpg    1x,
+                        ./images/works/work-9-desk@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="./images/works/work-9-tab.jpg 1x, ./images/works/work-9-tab@2x.jpg 2x"
+                      type="image/jpg" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="./images/works/work-9-sm.jpg 1x, ./images/works/work-9-sm@2x.jpg 2x"
+                      type="image/jpg" />
+                    <img
+                      class="work-img img"
+                      src="./images/works/work-9-sm.jpg"
+                      alt="work example Website"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                  /></picture>
                   <div class="work-overlay">
                     <p class="description-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
