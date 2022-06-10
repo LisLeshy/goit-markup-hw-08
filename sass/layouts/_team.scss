@@ -1,10 +1,8 @@
 /* Команда */
 .team {
-    @media screen and (min-width: 480px) {
             padding-top: 60px;
             padding-bottom: 60px;
-        }
-    
+       
         @media screen and (min-width: 1200px) {
             padding-top: 94px;
             padding-bottom: 94px;
@@ -16,10 +14,8 @@
 
 
 .team__list {
-@media screen and (min-width: 480px) {
         margin: -15px;
-    }
-
+   
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -35,10 +31,8 @@
     border-radius: 0px 0px 4px 4px;
     @include fonts(null, 16px, 1.19, 0.03em);
     text-align: center;
-
-    @media screen and (min-width: 480px) {
             margin: 15px;
-        }
+       
     
         @media screen and (min-width: 768px) {
             width: calc((100% - 4 * 15px) / 2);
@@ -75,11 +69,7 @@
 
 }
 .img-member {
-    @media screen and (min-width: 480px) {
-            width: 450px;
-            height: 460px;
-        }
-    
+
         @media screen and (min-width: 768px) {
             width: 354px;
             height: 374px;;
