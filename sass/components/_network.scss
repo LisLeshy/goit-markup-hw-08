@@ -1,4 +1,7 @@
 /* network */
+.network {
+    padding-bottom: 60px;
+}
 .network__text {
     margin-bottom: 20px;
     padding-bottom: 0px;
@@ -10,6 +13,7 @@
 
 .network-list {
     display: flex;
+    justify-content: center;
 }
 
 .network-list__item:not(:last-child) {

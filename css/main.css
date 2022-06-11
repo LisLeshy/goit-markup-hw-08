@@ -125,16 +125,14 @@ body {
           justify-content: space-between;
 }
 
-@media screen and (min-width: 480px) {
-  .logo {
-    font-family: var(--font-family-logo);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--accent-color);
-  }
+.logo {
+  font-family: var(--font-family-logo);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .logo__text {
@@ -353,11 +351,9 @@ body {
 }
 
 /* Преимущества */
-@media screen and (min-width: 480px) {
-  .benefits {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -367,10 +363,8 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .benefits__list {
-    margin: -15px;
-  }
+.benefits__list {
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -383,10 +377,8 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .benefits-article {
-    margin: 15px;
-  }
+.benefits-article {
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -680,28 +672,27 @@ body {
 
 /* футер */
 .footer {
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--footer-backgound-color);
 }
 
 .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
 }
 
 /* adress */
 .adress {
+  display: block;
   margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -720,6 +711,10 @@ body {
 }
 
 /* network */
+.network {
+  padding-bottom: 60px;
+}
+
 .network__text {
   margin-bottom: 20px;
   padding-bottom: 0px;
@@ -735,6 +730,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .network-list__item:not(:last-child) {
@@ -768,11 +766,6 @@ body {
 }
 
 /* footer form */
-.form {
-  display: block;
-  margin-left: auto;
-}
-
 .form__text {
   margin-bottom: 20px;
   padding-bottom: 0px;
@@ -784,18 +777,10 @@ body {
   color: var(--accent-test-color);
 }
 
-.form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .form-group__imput {
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
   border: none;
   font-size: 16px;
   line-height: 1.25;
@@ -809,9 +794,9 @@ body {
 }
 
 .form-group__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
