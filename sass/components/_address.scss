@@ -2,9 +2,13 @@
 .adress {
     margin-top: 20px;
     margin-bottom: 60px;  
-   margin-right: auto;
+
    @include fonts(null, 14px, 1.71, 0.03em);
     font-style: normal;
+    @media screen and (min-width: 1200px) {
+               margin-right: 70px;
+            margin-bottom: 0;
+        }
    
 }
 
@@ -18,3 +22,4 @@
     color: var(--adress-color);
     text-decoration: none;
 }
+       

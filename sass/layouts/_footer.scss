@@ -1,9 +1,5 @@
 /* футер */
 .footer {
-    // margin-left: auto;
-    // margin-right: auto;
-    // margin-bottom: 20px;
-    // padding-bottom: 0px;
     background-color: var(--footer-backgound-color);
 }
 
@@ -18,7 +14,8 @@
             align-items: baseline;
         }
                  @media screen and (min-width: 1200px) {
-                    // justify-content:center
+                justify-content: space-between;
+                text-align: left;
                  }
                 
     
