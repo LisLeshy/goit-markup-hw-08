@@ -1,12 +1,8 @@
 /* adress */
 .adress {
-    display: block;
     margin-top: 20px;
-    margin-bottom: 60px;
-   
-    
-    // margin-right: 70px;
-    text-align: center;
+    margin-bottom: 60px;  
+   margin-right: auto;
    @include fonts(null, 14px, 1.71, 0.03em);
     font-style: normal;
    

@@ -676,23 +676,32 @@ body {
 }
 
 .footer__container {
-  display: block;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 /* adress */
 .adress {
-  display: block;
   margin-top: 20px;
   margin-bottom: 60px;
-  text-align: center;
+  margin-right: auto;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -775,6 +784,17 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-test-color);
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .form-group__imput {

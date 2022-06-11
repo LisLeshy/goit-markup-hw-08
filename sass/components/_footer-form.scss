@@ -1,8 +1,8 @@
  /* footer form */
-//  .form {
-//      display: block;
-//      margin-left: auto;
-//  }
+ .form {
+    //  display: block;
+    //  margin-left: auto;
+ }
 
  .form__text {
      margin-bottom: 20px;
@@ -13,15 +13,15 @@
      color: var(--accent-test-color);
  }
 
-//  .form-group {
-//      display: flex;
-//      justify-content: center;
-//      flex-wrap: wrap;
+ .form-group {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
     
-//  }
+    
+ }
 
  .form-group__imput {
-    //  margin-right: 12px;
      margin-bottom: 20px;
      padding: 15px 16px;
      width: 100%;
