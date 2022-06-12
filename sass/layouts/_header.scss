@@ -10,3 +10,10 @@ text-align: center;
 justify-content: space-between;
 }
 
+.menu-button--open
+ {
+    z-index: 1;
+    @media screen and (min-width: 768px) {
+           display: none;
+            }
+}
