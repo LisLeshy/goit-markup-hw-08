@@ -15,6 +15,7 @@
             @media screen and (min-width: 768px) {
                display: flex;
                flex-wrap: wrap;
+             
             }
 }
 
@@ -22,6 +23,8 @@
         margin: 15px;
     
             @media screen and (min-width: 768px) {
+                display: flex;
+                    width: 100%;
                width: calc((100% - 4 * 15px) / 2);
             }
             @media screen and (min-width: 1200px) {
@@ -43,7 +46,11 @@
         opacity: 1;
 
     }
-
+   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+       width: 100%;
+   }
 }
 
 .work-description {
@@ -88,6 +95,9 @@
     border-right: 1px solid var(--border-card-color);
     border-bottom: 1px solid var(--border-card-color);
     border-left: 1px solid var(--border-card-color);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            flex-grow: 1;
+        }
 }
 
 .work .title {
