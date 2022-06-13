@@ -2,8 +2,10 @@
 .contact-list {
     display: none;
     @media screen and (min-width: 768px) {
-            display: block;
-            margin-left: 84px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-left: auto;
         }
                  @media screen and (min-width: 1200px) {
                      display: flex;
@@ -15,7 +17,7 @@
 }
 
 .contact-list__links {
-    
+    display: flex;
     align-items: center;
     color: var(--title-text-color);
     @include fonts(500, 12px, 1.14, 0.02em);
@@ -30,16 +32,17 @@
         }
                  @media screen and (min-width: 768px) {
                     display: block;
-                     font-size: 12px;
+                     font-size: 12px; 
+                     margin-bottom: 12px;
                  }
                 @media screen and (min-width: 1200px) {
-                    display: flex;
-                    padding-top: 32px;
+                    margin-bottom: 0;
+                   padding-top: 32px;
                     padding-bottom: 32px;
                     font-size: 14px;
                 }
-                
-}
+        
+ }
 
 .contact-list__item:not(:first-child) {
     margin-left: 50px;

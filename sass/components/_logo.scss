@@ -1,12 +1,11 @@
 .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-family: var(--font-family-logo);
     @include fonts(700, 26px, 1.2, 0.03em);
     text-decoration: none;
     color: var(--accent-color);
-    @media screen and (min-width: 768px) {
-            padding-top: 16px;
-            padding-bottom: 16px;
-        }
+   
     }
  
 
