@@ -8,7 +8,7 @@
     height: 100%;
     background-color: var(--primary-backgound-color);
     padding: 48px 15px 48px 40px;
-    z-index: 1;
+    z-index: 1000;
 
     transform: translateY(100%);
     transition: var(--transform);
@@ -19,7 +19,7 @@
 }
 
 .mobile-menu.is-open {
-    transform: translatey(0);
+    transform: translateY(0);
 }
 
 .menu-button--close,
@@ -30,13 +30,18 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-}
+    
+    @media screen and (min-width: 768px) {
+          display: none;
+        }
+    }
+
 
 .menu-button--close {
     position: absolute;
     top: 10px;
     right: 15px;
-
+   z-index: 100;
     &:hover,
     &:focus {
         fill: var(--accent-color);
@@ -47,15 +52,13 @@
     position: absolute;
     top: 10px;
     right: 15px;
-
+z-index: 500;
     &:hover,
     &:focus {
         fill: var(--title-text-color);
     }
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+  
 }
 
 .mobile-menu__nav--item {

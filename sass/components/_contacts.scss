@@ -1,18 +1,24 @@
 /* contacts */
 .contact-list {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-display: none;
+    display: none;
+    @media screen and (min-width: 768px) {
+            display: block;
+            margin-left: 84px;
+        }
+                 @media screen and (min-width: 1200px) {
+                     display: flex;
+                     justify-content: flex-end;
+                     align-items: center;
+                     margin-left: auto;
+                 }
 
 }
 
 .contact-list__links {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
+    align-items: center;
     color: var(--title-text-color);
-    @include fonts(500, 14px, 1.14, 0.02em);
+    @include fonts(500, 12px, 1.14, 0.02em);
     text-decoration: none;
     color: var(--primery-text-color);
     transition: color var(--transform);
@@ -22,6 +28,16 @@ display: none;
             color: var(--accent-color);
     
         }
+                 @media screen and (min-width: 768px) {
+                    display: block;
+                     font-size: 12px;
+                 }
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                    font-size: 14px;
+                }
                 
 }
 

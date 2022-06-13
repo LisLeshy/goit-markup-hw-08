@@ -17,7 +17,8 @@
 }
 
 .nav-list__links {
-    display: flex;
+    position: relative;
+    display: none;
     padding-top: 32px;
     padding-bottom: 32px;
     @include fonts(500, 14px, 1.14, 0.02em);
@@ -30,7 +31,9 @@
             color: var(--accent-color);
             text-decoration: none;
         }
-
+   @media screen and (min-width: 768px) {
+       display: block;
+   }
 }
 
 
