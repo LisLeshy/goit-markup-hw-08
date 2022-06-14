@@ -1452,7 +1452,7 @@ body {
 }
 
 .menu-button--open:hover, .menu-button--open:focus {
-  fill: var(--title-text-color);
+  fill: var(--accent-color);
 }
 
 .mobile-menu__nav--item:not(:last-child) {
