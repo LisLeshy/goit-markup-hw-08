@@ -32,45 +32,61 @@
                 >Портфолио</a
               >
             </li>
-            <li class="nav-list__item"><a class="nav-list__links" href="Контакты">Контакты</a></li>
+            <li class="nav-list__item">
+              <a class="nav-list__links" href="Контакты">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact-list list">
           <li class="contact-list__item">
             <a class="contact-list__links" href="mailto:info@devstudio.com"
               ><svg class="contact-list__icon" width="16" height="16">
-                <use href="./images/sprite.svg#icon-envelope-1"></use></svg>info@devstudio.com</a
+                <use href="./images/sprite.svg#icon-envelope-1"></use></svg
+              >info@devstudio.com</a
             >
           </li>
           <li class="contact-list__item">
             <a class="contact-list__links" href="tel:380961111111"
               ><svg class="contact-list__icon" width="10" height="16">
-                <use href="./images/sprite.svg#icon-smartphone-2"></use></svg>+38 096 111 11 11</a
+                <use href="./images/sprite.svg#icon-smartphone-2"></use></svg
+              >+38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button
+          class="menu-button--open is-open js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель  меню">
+            <use class="mobile-menu__icon--menu" href="./images/sprite.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section class="work">
         <div class="container">
           <h1 class="section-title visually-hidden">Портфолио</h1>
-         <div class="filter">
-          <ul class="filter-list list">
-            <li class="filter-list__item"><button type="button" class="active-btn">Все</button></li>
-            <li class="filter-list__item">
-              <button type="button" class="active-btn">Веб-сайты</button>
-            </li>
-            <li class="filter-list__item">
-              <button type="button" class="active-btn">Приложения</button>
-            </li>
-            <li class="filter-list__item">
-              <button type="button" class="active-btn">Дизайн</button>
-            </li>
-            <li class="filter-list__item">
-              <button type="button" class="active-btn">Маркетинг</button>
-            </li>
-          </ul>
+          <div class="filter">
+            <ul class="filter-list list">
+              <li class="filter-list__item">
+                <button type="button" class="active-btn">Все</button>
+              </li>
+              <li class="filter-list__item">
+                <button type="button" class="active-btn">Веб-сайты</button>
+              </li>
+              <li class="filter-list__item">
+                <button type="button" class="active-btn">Приложения</button>
+              </li>
+              <li class="filter-list__item">
+                <button type="button" class="active-btn">Дизайн</button>
+              </li>
+              <li class="filter-list__item">
+                <button type="button" class="active-btn">Маркетинг</button>
+              </li>
+            </ul>
           </div>
           <ul class="work-list list">
             <li class="item">
@@ -506,5 +522,62 @@
         </form>
       </div>
     </footer>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button
+        class="menu-button--close is-open js-close-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель меню">
+          <use class="mobile-menu__icon--close" href="./images/sprite.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__nav--item">
+          <a class="mobile-menu__nav--link nav__link--active" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-menu__nav--item">
+          <a class="mobile-menu__nav--link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu__nav--item">
+          <a class="mobile-menu__nav--link" href="">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts list">
+        <li class="mobile-menu__contacts--item">
+          <a class="mobile-menu__contacts--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__contacts--item">
+          <a class="mobile-menu__contacts--email" href="malito:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials list">
+        <li class="mobile-menu__socials--item">
+          <a class="mobile-menu__socials--link" href="">Instagram</a>
+        </li>
+        <li class="mobile-menu__socials--item">
+          <a class="mobile-menu__socials--link" href="">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials--item">
+          <a class="mobile-menu__socials--link" href="">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials--item">
+          <a class="mobile-menu__socials--link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -12,6 +12,8 @@
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
           padding-bottom: 200px;
+
+         
       }
 
     background-image:
@@ -41,7 +43,8 @@
          (min-resolution: 2dppx) {
          background-image: url(../images/hero/hero_desk@2x-min.jpg), linear-gradient(var(--gradient-color), var(--gradient-color));
          }
-            }                       
+            }   
+                               
         }
            
 .hero-title {

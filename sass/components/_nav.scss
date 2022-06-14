@@ -1,7 +1,12 @@
 /* navigation */
+
 .nav {
+    display: none;
     margin-left: 88px;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+            display: block;
+        }
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
         
@@ -22,7 +27,6 @@
 
 .nav-list__links {
     position: relative;
-    display: none;
     padding-top: 32px;
     padding-bottom: 32px;
     @include fonts(500, 14px, 1.14, 0.02em);
@@ -35,9 +39,7 @@
             color: var(--accent-color);
             text-decoration: none;
         }
-   @media screen and (min-width: 768px) {
-       display: block;
-   }
+  
 }
 
 
