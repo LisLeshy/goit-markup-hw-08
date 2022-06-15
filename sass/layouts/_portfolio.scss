@@ -89,6 +89,7 @@
     padding-left: 24px;
     @include fonts(null, 18px, 1.56, 0.03em);
     color: var(--accent-test-color);
+    overflow-y: scroll;
 }
 
 .card-text {

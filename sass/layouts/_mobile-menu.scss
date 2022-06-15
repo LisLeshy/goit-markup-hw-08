@@ -12,14 +12,17 @@
 
     transform: translateY(100%);
     transition: var(--transform);
-
+    overflow-y: scroll;
     @media screen and (min-width: 768px) {
         display: none;
     }
+        overflow-y: scroll;
+        
 }
 
 .mobile-menu.is-open {
     transform: translateY(0);
+    
 }
 
 .menu-button--close,
