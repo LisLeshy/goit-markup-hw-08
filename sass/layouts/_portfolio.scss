@@ -9,17 +9,17 @@
 }
 
 .work-list {
+        display: flex;
+        flex-wrap: wrap;
         list-style: none;
         margin: -15px;
+        
            
-            @media screen and (min-width: 768px) {
-               display: flex;
-               flex-wrap: wrap;
-             
-            }
+      
 }
 
 .work .item {
+    
         margin: 15px;
     
             @media screen and (min-width: 768px) {
@@ -32,7 +32,8 @@
             }
 }
 
-.work .link {
+.work .link {  
+    
     display: block;
     text-decoration: none;
     transition: box-shadow var(--transform);

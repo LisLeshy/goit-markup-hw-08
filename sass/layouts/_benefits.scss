@@ -49,6 +49,9 @@
     margin-bottom: 10px;
     @include fonts(700, 14px, 1.14, 0.03em);
     color: var(--title-text-color);
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
 
 }
 
