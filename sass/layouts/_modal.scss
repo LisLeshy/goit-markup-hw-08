@@ -34,9 +34,7 @@
     border-radius: 4px;
     background: var(--primary-backgound-color);
     width: calc(100vw - 30px);
-    @media screen and (max-width: 767px) {
-            top: 60%;
-        }
+  
 
     @media screen and (min-width: 768px) {
             width: 450px;
